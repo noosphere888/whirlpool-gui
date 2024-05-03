@@ -1,0 +1,137 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './css/bootstrap-dashboard.css';
+@import './css/samourai.css';
+@import './css/dashboard.css';
+
+.premixPage .btn-sm {
+  line-height: 1em !important;
+}
+
+th.hash {
+  width: 100px;
+}
+
+th.address {
+  width: 100px;
+}
+
+th.account {
+  width: 70px;
+}
+
+th.confirmations {
+  width:60px;
+}
+
+th.value, th.poolId, th.mixsDone, th.utxoStatus {
+  width: 95px;
+}
+
+.utxoMessage {
+  max-width: 180px;
+  word-break: break-all;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+.navbar {
+  color: #fff !important;
+}
+
+.stats {
+  padding-top: 1em;
+}
+
+.tablescroll {
+  overflow-y: scroll;
+}
+
+.table-utxos {
+  border-left: 1px solid #700606;
+}
+
+.table-utxos .table-sm td {
+  padding: 0.2rem;
+}
+.table-utxos .btn-sm {
+  line-height: 1em;
+}
+
+.table-utxos th.utxoControls {
+  width: 7.5em;
+}
+
+.table-utxos th a {
+  cursor: pointer;
+}
+
+.table-utxos tr.utxo-disabled {
+  opacity: 0.5;
+}
+
+.table-hover tbody tr.utxo-disabled:hover {
+  background: none;
+}
+
+.table-utxos .clipboard-icon {
+  visibility: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.table-utxos .clipboard-icon:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.table-utxos tbody tr td:hover .clipboard-icon {
+  visibility: visible;
+}
+
+.table-utxos .utxo-controls {
+  visibility: hidden;
+}
+
+.table-utxos tbody tr:hover .utxo-controls {
+  visibility: visible;
+}
+
+.table-utxos tbody input[type='checkbox'] {
+  visibility: hidden;
+}
+
+.table-utxos tbody tr:hover input[type='checkbox'], .table-utxos tbody input:checked {
+  visibility: visible;
+}
+
+.table-generic .select-actions {
+  padding: 0 1em 0.3em 1em;
+  text-align:center;
+}
+
+.modal-body canvas.qr {
+  margin: 0.6em 0 0.2em 0;
+}
+
+.modal-zpub {
+  word-break: break-word;
+}
+
+.sidebar-sticky {
+  text-align: center;
+}
+.sidebar-sticky .nav {
+  text-align: left;
+}
+
+.zpubLink {
+  float: right;
+  font-size: 0.9em;
+  font-weight: bold;
+}
